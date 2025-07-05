@@ -1,7 +1,7 @@
 /* 
 
 ***************************************
-Create DAtabase and Schemas 
+Create Database and Schemas 
 ***************************************
 */
 
@@ -82,6 +82,13 @@ ID	NVARCHAR  (50),
 CAT NVARCHAR (50),	
 SUBCAT NVARCHAR (50),
 MAINTENANCE NVARCHAR  (50)
+);
+
+IF OBJECT_ID ('bronze.erp_loc_a101', 'U') IS NOT NULL 
+	DROP TABLE bronze.erp_loc_a101
+CREATE TABLE bronze.erp_loc_a101(
+CID NVARCHAR (50),
+CNTRY NVARCHAR (50)
 );
 
 
