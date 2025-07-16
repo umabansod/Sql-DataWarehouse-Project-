@@ -15,12 +15,16 @@ This project is designed to:
 - Load data into a centralized data warehouse
 - Generate business insights using dashboards
 
+## DATA LOAD 
+<img width="1242" height="560" alt="image" src="https://github.com/user-attachments/assets/ec2c5fd9-19c2-42f1-8ad9-05189e4dcef0" />
+
+
 
 ## 🔄 ETL Workflow
 
-1. **Extract**: Pull data from [e.g., flat files, APIs, databases]
-2. **Transform**: Clean and standardize using Python/SQL
-3. **Load**: Load into warehouse in structured tables
+1. **Extract**: Pull data from [e.g., EXCEL]
+2. **Transform**: Clean and standardize using SQL in silver layer
+3. **Load**: Load from silver to gold with in structured tables
 4. **Visualize**: Build KPIs, trends, and summaries in dashboards
 
 ## DATA MART ( STAR SCHEMA ) 
