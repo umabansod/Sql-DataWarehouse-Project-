@@ -36,6 +36,8 @@ This project is designed to:
    ```bash
    git clone https://github.com/your-username/data-warehouse-analytics.git
    cd data-warehouse-analytics
+2. Project flow in notion
+   https://www.notion.so/Data-Warehouse-project-223aee64c6388054a2f2cdd340687e83?source=copy_link
 
 
 ## ✍️ Author
