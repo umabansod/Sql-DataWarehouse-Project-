@@ -23,6 +23,9 @@ This project is designed to:
 3. **Load**: Load into warehouse in structured tables
 4. **Visualize**: Build KPIs, trends, and summaries in dashboards
 
+## DATA MART ( STAR SCHEMA ) 
+<img width="1158" height="664" alt="image" src="https://github.com/user-attachments/assets/1722ec7d-7071-49b4-a6da-c3aaf1aa03d1" />
+
 ## ✅ How to Use
 
 1. Clone the repository:
