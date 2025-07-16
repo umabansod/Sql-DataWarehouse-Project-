@@ -1,22 +1,21 @@
-Select * from silver.crm_cust_info;
-select * from silver.erp_cust_az12;
-select * from silver.erp_loc_a101;
---- Gender column selection 
-select distinct
-ci.cst_gndr,
-ca.gen,
-case when ci.cst_gndr != 'n/a' then ci.cst_gndr
-	else coalesce(ca.gen,'n/a')
-end as new_gen
-from silver.crm_cust_info ci
-Left join  silver.erp_cust_az12 ca
-on ci.cst_key = ca.cid
-Left join silver.erp_loc_a101 lo
-on ci.cst_key = lo.cid
-order by 1,2
+/* 
+****************************************************
+DDL SCRIPT : CREATE GOLD VIEWS
+****************************************************
+SCRIPT PURPOSE :
+	This Script creates for the gold layer in the data warehouse.
+	The Gold layer represents the final dimension and fact tables (star schema)
+
+	Each view performs transformation and combines data from the silver.layer
+	to produce  a clean, enriched and business ready dataset.
+
+Usage :
+	 These views can be queried direclty for analytics and reporting .
+*****************************************************
+*/
 
 ******************************************
-\* -- Dimention Customer Table 
+ -- Dimention Customer Table 
 ******************************************
 
 CREATE VIEW gold.dim_customers As 
